@@ -4,7 +4,7 @@
  
     protected static PathNodeType func_237238_b_(IBlockReader p_237238_0_, BlockPos p_237238_1_) {
        BlockState blockstate = p_237238_0_.func_180495_p(p_237238_1_);
-+      PathNodeType type = blockstate.getAiPathNodeType(p_237238_0_, p_237238_1_);
++      PathNodeType type = blockstate.getAiPathNodeType(p_237238_0_, p_237238_1_, this.entity);
 +      if (type != null) return type;
        Block block = blockstate.func_177230_c();
        Material material = blockstate.func_185904_a();
